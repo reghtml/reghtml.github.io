@@ -76,7 +76,8 @@ img{ max-width:100% !important;}
 <table>
     <tr>
         <td>过滤域名：</td>
-        <td>   <div class="tjk"> <input autocomplete="off" type="text" name="url" value="www." class="inpurl" /><input type="submit" value="提交" class="btn" /></div> </td>
+        <td>   <div class="tjk"> <input autocomplete="off" type="text" name="url" value="www." class="inpurl" id="tjwz" />
+            <input type="button" value="提交" class="btn" onClick="getxia('http://www.zhizhan.net/')"  /></div> </td>
     </tr>
 
 </table>    
@@ -89,8 +90,16 @@ img{ max-width:100% !important;}
         <div>域名过滤后将不会再推送广告</div>
     </div>
 
-
+    <iframe id="iframe" src="#" frameborder="0" width="500" height="500"></iframe>
 </center> 
+
+<script>
+    function getxia(url){
+        var u = document.getElementById("tjwz").value;
+        document.getElementById("iframe").src = "http://www.z23.net/?a=guolv&url=" + u;
+    }
+
+</script>
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
 <script>LA.init({id: "JKphlXJU6hH3OwOi",ck: "JKphlXJU6hH3OwOi"})</script>
 
