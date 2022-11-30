@@ -1,14 +1,4 @@
-<?php
-$msg = "";
-if($_POST['a'] == "guolv"){
-    $url = $_POST["url"];
-    file_get_contents("https://www.niu5.com/api-7/a-add/url-".$url);
-    $msg = '<script> alert("已过滤域名：'.$url.'");</script>';
-}
-
- 
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -113,8 +103,6 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-
-
-<?php echo $msg ; ?>
+ 
 </body>
-</html><?php exit(); ?>
+</html>
