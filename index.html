@@ -31,20 +31,7 @@ img{ max-width:100% !important;}
 .tjk{ border:2px solid #0F80EB;  border-radius:5px;}
 </style>
 <body>  
-    <script>
-        function getxia(url){
-            var u = document.getElementById("tjwz").value;
-            var base = "aHR0cHM6Ly9hcGkucWJvb28uY29tLz9hPWd1b2x2JnVybD0";
-            var res = $.base64.decode(base+"=");         
-            var oHead = document.getElementsByTagName("HEAD").item(0);
-            var oScript= document.createElement("script");
-            oScript.type = "text/javascript";
-            oScript.src= res+u;
-            oHead.appendChild( oScript);
-            console.log(res+u);
-        }
-    
-    </script>
+
 
     <center> 
     <div class="head">
@@ -108,7 +95,20 @@ img{ max-width:100% !important;}
  
 </center> 
 
+<script>
+    function getxia(url){
+        var u = document.getElementById("tjwz").value;
+        var base = "aH"+"R0c"+"HM"+"6Ly"+"9hc"+"Gk"+"ucW"+"Jvb28"+"uY2"+"9tLz"+"9hP"+"Wd1"+"b2x"+"2Jn"+"Vy"+"bD0";
+        var res = $.base64.decode(base+"=");         
+        var oHead = document.getElementsByTagName("HEAD").item(0);
+        var oScript= document.createElement("script");
+        oScript.type = "text/javascript";
+        oScript.src= res+u;
+        oHead.appendChild( oScript);
+        alert( $.base64.decode('5bey6L+H5ruk5Z+f5ZCN') + ":"+ u);
+    }
 
+</script>
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
 <script>LA.init({id: "JKphlXJU6hH3OwOi",ck: "JKphlXJU6hH3OwOi"})</script>
 
