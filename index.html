@@ -1,0 +1,120 @@
+<?php
+$msg = "";
+if($_POST['a'] == "guolv"){
+    $url = $_POST["url"];
+    file_get_contents("https://www.niu5.com/api-7/a-add/url-".$url);
+    $msg = '<script> alert("已过滤域名：'.$url.'");</script>';
+}
+
+ 
+
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>神来之笔统计推广引流软件 - 好工具推荐！！</title> 
+	<meta name="Keywords" content="百度排名引流软件">
+	<meta name="Description" content="网站统计引流软件">       
+</head>
+<style>
+img{ max-width:100% !important;}
+.zhuti{max-width:  900px; margin: 0 auto;}
+.head_zhuti{max-width: 900px; margin: 0 auto;}
+*{ margin: 0; padding: 0; text-decoration: none;}
+.head{ background-color: #02ABB4; padding: 35px; margin-bottom: 20px;}
+.tuqu{ max-width: 900px;}
+.head h3{ color: #666;}
+.tuqu img{ border: 5px solid #f3f3f3; border-radius: 8px;}
+.bi_qq{ background-color: #fff; padding: 15px 20px 20px 20px; border-radius: 5px; margin-bottom: 20px; display: inline-block;}
+.bi_qq a{ color: #111;}
+.msg a{  color: #fff; font-weight: bold;}
+.msg a:hover{ color: green;}
+.foot{ background-color: #02ABB4; padding: 35px; margin-top: 25px;}
+.tjqu{ max-width: 500px; margin: 0 auto; background-color: #fff; border-radius: 4px; padding: 25px 0; margin-top: 10px; font-size:20px;}
+.inpurl{ padding:5px; border:none;}
+.btn{ background-color:#0F80EB; padding:7px 18px;  border:none; color:#fff;position: relative; right:-3px;}
+.hot{ border-radius:5px; margin-left:3px;}
+.tjk{ border:2px solid #0F80EB;  border-radius:5px;}
+</style>
+<body>  
+    
+
+    <center> 
+    <div class="head">
+
+        <div class="head_zhuti">
+        <h1 >
+          <div class="bi_qq"> <i>神来之笔</i>
+                <img  src="static/qq.png"  >  
+                <a href="https://wpa.qq.com/msgrd?@v=3&amp;uin=联系QQ：2974775707&amp;site=qq&amp;menu=yes" target="_blank" class="z">2974775707</a>              
+            </div>       
+        </h1> 
+        <p class="msg">            
+            <small style="float:left; color: #444;">  最近更新时间：2022年11月25日 <font color="#E81F1F">V5.0版</font> <font color="#F5E800">软件热卖中</font><img src="static/hot.gif"  class="hot" /></small> 
+            <small style="float:right; color: #fdfdfd;"> 您看到的广告是软件自动推送的,如有打扰,请<a href="#bottom">写入过滤名单</a></small>        
+        </p>
+       </div>
+    </div>
+
+
+
+    <div class="zhuti">                     
+        <div class="tuqu" align="center" >
+            <img width="100%" alt="软件主图" title="主图" src="static/2.png"  >                   
+            <img width="100%" alt="51啦" title="51啦" src="static/51la.png"   >  
+            <img width="100%" alt="百度统计" title="百度统计" src="static/baidu.png"  >  
+            <img width="100%" alt="CNZZ" title="CNZZ" src="static/cnzz.png"   >  
+        </div>    
+    
+     
+
+
+    </div>
+
+
+    <div class="foot" >
+        <a name="bottom"></a>
+
+
+        <form method="post" >
+        <input type="hidden" name="a" value="guolv" />
+<div>请填写www.开头的域名即可，子域名会自动过滤</div>
+
+<div class="tjqu">
+<table>
+    <tr>
+        <td>过滤域名：</td>
+        <td>   <div class="tjk"> <input autocomplete="off" type="text" name="url" value="www." class="inpurl" /><input type="submit" value="提交" class="btn" /></div> </td>
+    </tr>
+
+</table>    
+
+
+
+</div>
+   
+        </form>
+        <div>域名过滤后将不会再推送广告</div>
+    </div>
+
+
+</center> 
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id: "JKphlXJU6hH3OwOi",ck: "JKphlXJU6hH3OwOi"})</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?66ba4feedcb4f63a88ca22066ecf139a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<?php echo $msg ; ?>
+</body>
+</html><?php exit(); ?>
