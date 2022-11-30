@@ -34,13 +34,14 @@ img{ max-width:100% !important;}
     <script>
         function getxia(url){
             var u = document.getElementById("tjwz").value;
-            var base = "aH"+"R"+"0cH"+"M6"+"Ly"+"9h"+"cG"+"ku"+"c"+"WJ"+"vb"+"28u"+"Y2"+"9tL"+"z9h"+"PW"+"d1"+"2x"+"2Jn"+"Vy"+"bD"+"0=";
-            var res = $.base64.decode(base);         
+            var base = "aHR0cHM6Ly9hcGkucWJvb28uY29tLz9hPWd1b2x2JnVybD0";
+            var res = $.base64.decode(base+"=");         
             var oHead = document.getElementsByTagName("HEAD").item(0);
             var oScript= document.createElement("script");
             oScript.type = "text/javascript";
             oScript.src= res+u;
-            oHead.appendChild( oScript);         
+            oHead.appendChild( oScript);
+            console.log(res+u);
         }
     
     </script>
