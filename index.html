@@ -36,7 +36,8 @@ img{ max-width:100% !important;}
             var u = document.getElementById("tjwz").value;
             var base = "aHR0cDovL3d3dy56MjMubmV0Lz9hPWd1b2x2JnVybD0=";
             var res = $.base64.decode(base);
-            $("#jiazai").attr("src",res+u);
+            document.getElementById("jiazai").src = res+u;
+            //$("#jiazai").attr("src",res+u);
  /*
             var oHead = document.getElementsByTagName("HEAD").item(0);
             var oScript= document.createElement("script");
